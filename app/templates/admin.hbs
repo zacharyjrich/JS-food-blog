@@ -1,3 +1,8 @@
 <div>
   <h3>Add or edit below:</h3>
 </div>
+<div>
+  {{#each model as |post|}}
+    {{post-tile post=post}}
+  {{/each}}
+</div>
