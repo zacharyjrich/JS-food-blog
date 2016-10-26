@@ -1,6 +1,9 @@
 <div>
   <h3>Add or edit below:</h3>
 </div>
+
+{{new-post savePost="savePost"}}
+
 <div>
   {{#each model as |post|}}
     {{admin-tile post=post destroyPost="destroyPost"}}
