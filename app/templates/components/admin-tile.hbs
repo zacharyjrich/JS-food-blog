@@ -1,0 +1,7 @@
+<div>
+    <p>{{post.date}}</p>
+    <h3>{{post.title}}</h3>
+    <img src="{{post.image}}" alt="{{post.title}}" width="400px" height="auto"/>
+    <p>{{post.body}}</p>
+    <button {{action 'delete' post}}>Delete Post</button>
+</div>
