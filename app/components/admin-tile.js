@@ -7,6 +7,9 @@ export default Ember.Component.extend({
         console.log(post);
         this.sendAction('destroyPost', post);
       }
-    }
+    },
+    update(post, params) {
+      this.sendAction ('update', post, params);
+    },
   }
 });
