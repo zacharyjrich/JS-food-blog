@@ -5,7 +5,17 @@
 {{new-post savePost="savePost"}}
 
 <div>
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
     {{admin-tile post=post destroyPost="destroyPost" update="update"}}
   {{/each}}
 </div>
+
+<h3>Here is what folks are saying about this dish:</h3>
+
+<ul>
+  {{#each model.comments as |comment|}}
+    <li>{{comment.author}}'s Comment: {{comment.text}}</li>
+  {{/each}}
+</ul>
+
+{{new-comment saveComment="saveComment"}}
